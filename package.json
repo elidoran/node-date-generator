@@ -1,0 +1,36 @@
+{
+  "name": "@date/generator",
+  "version": "0.1.0",
+  "description": "Calculate dates with easy to read helper functions",
+  "main": "lib",
+  "keywords": [
+    "generate",
+    "calculate",
+    "dates",
+    "date",
+    "chain",
+    "functions"
+  ],
+  "author": "Eli Doran <eli+npm@elidoran.com>",
+  "license": "MIT",
+  "scripts": {
+    "compile": "coffee --bare --compile lib",
+    "clean": "rm -rf lib/*.js",
+    "prepublish": "npm run compile",
+    "postpublish": "npm run clean",
+    "test": "mocha --compilers coffee:coffee-script/register --reporter spec --bail --check-leaks test/lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/elidoran/node-date-generator.git"
+  },
+  "bugs": "http://github.com/elidoran/node-date-generator/issues",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "mocha": "^2.3.3"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=0.10"
+  }
+}
