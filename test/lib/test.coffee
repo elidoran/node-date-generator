@@ -1,8 +1,10 @@
 assert = require 'assert'
+# build a generator instance for us to use
 gen    = require('../../lib')()
 
 describe 'test generator', ->
 
+  # test each order function
   describe 'order', ->
 
     it 'should have ordinal 1 for first', ->
@@ -30,7 +32,8 @@ describe 'test generator', ->
       order = gen.last()
       assert.equal order.ordinal, 5
 
-
+  # test each day function being called on generator
+  # instead of after an order function
   describe 'day', ->
 
     it 'should have day 0 for sunday, and default ordinal 1', ->
@@ -118,7 +121,7 @@ describe 'test generator', ->
       assert.equal day.values.ordinal, 2, 'ordinal should be 2'
       assert.equal day.values.day, 6, 'day should be 6'
 
-
+  # test month functions called after order and day functions
   describe 'month', ->
 
     it 'should have month 0 for january', ->
@@ -238,7 +241,7 @@ describe 'test generator', ->
       assert.equal month.values.day, 4, 'day should be 4'
       assert.equal month.values.month, 5, 'month should be 5'
 
-
+  # test all the way thru to providing a year
   describe 'year', ->
 
     it 'should have first thursday in january of 2016', ->
