@@ -25,8 +25,8 @@ var washingtonDay = gen.third().monday().in().january().of(2016)
 //   skip the in() and of() and specify the year in the january() call
 var washingtonDay = gen.third().monday().january(2016)
 //   specify 'third' with a '3' to monday(),
-//           january with '1' to month()
-var washingtonDay = gen.monday(3).month(1).of(2016)
+//           january with '0' to month()
+var washingtonDay = gen.monday(3).month(0).of(2016)
 
 var thanksgiving  = gen.fourth().thursday().in().november().of(2016)
 ```
@@ -35,11 +35,11 @@ var thanksgiving  = gen.fourth().thursday().in().november().of(2016)
 
 Start with the order functions:
 
-1. `first()`
-2. `second()`
-3. `third()`
-4. `fourth()`
-5. `last()`
+1. `first()` - 1
+2. `second()` - 2
+3. `third()` - 3
+4. `fourth()` - 4
+5. `last()` - 5 (will be last, even when last is the fourth)
 
 
 ## Days
@@ -71,6 +71,7 @@ Month functions are available after calling a day function:
 10. `october()`
 11. `november()`
 12. `december()`
+
 
 Also, shortcut making a call to `of(year)` after it and specify the year in the month call, like `august(2016)`.
 
