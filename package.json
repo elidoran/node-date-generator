@@ -1,6 +1,6 @@
 {
   "name": "@date/generator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Calculate dates with easy to read helper functions",
   "main": "lib",
   "keywords": [
