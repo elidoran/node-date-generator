@@ -21,12 +21,12 @@ var gen = require('@date/generator')
 
 // these are equivalent:
 //   specify each thing individually
-var washingtonDay = gen.third().monday().in().january().of(2016)
-//   skip the in() and of() and specify the year in the january() call
-var washingtonDay = gen.third().monday().january(2016)
+var washingtonDay = gen.third().monday().in().february().of(2016)
+//   skip the in() and of() and specify the year in the february() call
+var washingtonDay = gen.third().monday().february(2016)
 //   specify 'third' with a '3' to monday(),
-//           january with '0' to month()
-var washingtonDay = gen.monday(3).month(0).of(2016)
+//           'february' with '1' to month()
+var washingtonDay = gen.monday(3).month(1).of(2016)
 
 var thanksgiving  = gen.fourth().thursday().in().november().of(2016)
 ```
