@@ -2,7 +2,10 @@
   "name": "@date/generator",
   "version": "0.1.1",
   "description": "Calculate dates with easy to read helper functions",
-  "main": "lib",
+  "main": "lib/index.js",
+  "files": [
+    "lib/index.js"
+  ],
   "keywords": [
     "generate",
     "calculate",
@@ -27,8 +30,9 @@
   },
   "bugs": "http://github.com/elidoran/node-date-generator/issues",
   "devDependencies": {
-    "coffee-script": "^1.10.0",
-    "mocha": "^2.3.3"
+    "coffee-script": "^1.12.7",
+    "coveralls": "^3.0.2",
+    "mocha": "^5.2.0"
   },
   "dependencies": {},
   "engines": {
