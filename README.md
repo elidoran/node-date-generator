@@ -1,7 +1,7 @@
 # @date/generator
 [![Build Status](https://travis-ci.org/elidoran/node-date-generator.svg?branch=master)](https://travis-ci.org/elidoran/node-date-generator)
-[![Dependency Status](https://gemnasium.com/elidoran/node-date-generator.png)](https://gemnasium.com/elidoran/node-date-generator)
 [![npm version](https://badge.fury.io/js/%40date%2Fgenerator.svg)](http://badge.fury.io/js/%40date%2Fgenerator)
+[![Coverage Status](https://coveralls.io/repos/github/elidoran/node-date-generator/badge.svg?branch=master)](https://coveralls.io/github/elidoran/node-date-generator?branch=master)
 
 Generate dates with readable function chaining.
 
