@@ -79,4 +79,4 @@ Also, shortcut making a call to `of(year)` after it and specify the year in the 
 
 Last call specifies the year to function `of(year)` and returns a Date instance.
 
-## MIT License
+## [MIT License](LICENSE)
