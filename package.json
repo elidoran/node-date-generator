@@ -1,6 +1,6 @@
 {
   "name": "@date/generator",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Calculate dates with easy to read helper functions",
   "main": "lib/index.js",
   "files": [
