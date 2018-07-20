@@ -241,6 +241,16 @@ describe 'test generator', ->
       assert.equal month.day, 4, 'day should be 4'
       assert.equal month.month, 5, 'month should be 5'
 
+    it 'should allow month(#)', ->
+
+      order = gen.second()
+      day   = order.thursday()
+      month = day.month(5)
+      assert.equal month.ordinal, 2, 'ordinal should be 2'
+      assert.equal month.day, 4, 'day should be 4'
+      assert.equal month.month, 5, 'month should be 5'
+
+
   # test all the way thru to providing a year
   describe 'year', ->
 
@@ -326,3 +336,13 @@ describe 'test generator', ->
       assert.equal date.getFullYear(), 2016, 'should have year 2016'
       assert.equal date.getMonth(), 0, 'should have month 0'
       assert.equal date.getDate(), 14, 'should have day of month 14'
+
+    it 'should allow in()', ->
+      # NOTE: also covers in()
+      # NOTE: also covers a day after the first day of the month
+      #       (Wednesday is after Monday, Monday is the first in Jan 2018)
+      date = gen.first().wednesday().in().january().of(2018)
+
+      assert.equal date.getFullYear(), 2018, 'should have year 2018'
+      assert.equal date.getMonth(), 0, 'should have month 0'
+      assert.equal date.getDate(), 3, 'should have day of month 3'
